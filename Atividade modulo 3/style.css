@@ -10,9 +10,16 @@ body > header {
     color: white;
 
 }
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
 
 header li a {
     color: white;
+    text-decoration: none;
 }
 
 header .container {
@@ -29,10 +36,12 @@ header .container {
 .articles {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .articles article img {
-    height: 180px;
+    /* height: 180px; */
+    width: 100%;
 }
 
 .articles article {
@@ -40,6 +49,7 @@ header .container {
 }
 
 section {
+    ;
     padding: 16px 0;
 }
 
@@ -57,4 +67,40 @@ section h2 {
     color: #fff;
     padding: 8px;
     display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #f8f59f;
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a;
 }
